@@ -359,6 +359,16 @@ section.section {
 	margin-bottom: 0;
 	padding-bottom:0;
 }
+.btn-contact a{
+	border-radius: 25px;
+	color: #fff !important;
+	border: 1px solid #5FCF80;
+}
+.btn-contact a:hover, .btn-contact a:focus {
+	border: 1px solid #5FCF80;
+	background-color: #fff;
+	color:#5FCF80 !important;
+}
 
 .nav li {
 	height: 100%;
