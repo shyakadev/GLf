@@ -1,9 +1,3 @@
-/*
-    Theme Name: Amoeba
-    Theme URL: https://bootstrapmade.com/free-one-page-bootstrap-template-amoeba/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-*/
 
 /* ==== Google font ==== */
 @import url('https://fonts.googleapis.com/css?family=Lato:400,300,700,900');
@@ -378,7 +372,7 @@ section.section {
 	height: 100%;
 	line-height: 100%;
 	vertical-align: middle;
-	color: #4880ff;
+	color: #fff;
 	font-weight: 900;
 	font-size: 15px;
 	letter-spacing: .1em;
@@ -408,6 +402,7 @@ h1 a.navbar-brand {
 	color: #fff;
 	font-weight: 900;
 	text-shadow: none;
+	margin-top: -10px;
 }
 
 .navbar-brand {
@@ -434,16 +429,24 @@ h1 a.navbar-brand {
 
 
 
+
+
 /*===========================
   --- Featured section ----
 =========================== */
 /* bg-coloring */
 .bg-color {
-background-color: RGBA(12, 11, 11, 0.82);
-min-height: 800px;
+background-color: RGBA(12, 11, 11, 0.42);
+min-height: 600px;
 position:relative;
 margin-top:-200px;
 padding-top:200px;
+}
+.bg-colorn {
+background-color: RGBA(12, 11, 11, 0.42);
+position:relative;
+margin-top:-200px;
+padding-top:115px;
 }
 
 /*downward trick */
@@ -453,13 +456,30 @@ section.featured {
 	background-color: #22829e;
 	color: #fdfdfd;
 	margin-top:0px;
-	height: 800px;
+	height: 100px;
+}
+section.featuredn {
+	padding: 200px 0 40px;
+	background-color: #22829e;
+	color: #fdfdfd;
+	margin-top:0px;
+	height: 100px;
+}
+section.featuredn h2.slogan {
+	color: #fff;
+	font-weight: 900;
 }
 /*a new banner class for an image */
 section.banner {
 	background:url("../img/landing.jpg") no-repeat center top;
 	background-size: cover;
 	min-height: 600px;
+	position:relative;
+}
+
+section.bannern {
+	background:url("../img/landing.jpg") no-repeat center top;
+	background-size: cover;
 	position:relative;
 }
 
@@ -474,6 +494,13 @@ section.featured.inner {
 	background: #eee;
 	padding: 150px 0 50px;
 }
+
+/* =======
+  ------- header cust ----
+  =========*/
+  #gallery {
+  	margin-top:50px;
+  }
   
   
 /* --- Flexslider --- */
@@ -615,6 +642,17 @@ section.featured.inner {
 .fullwidthbanner a.btn {
 	color: #fff;
 }
+
+/* =========================
+		Latest News
+		====================*/
+		#news {
+			padding-top:30px;
+		}
+		.button {
+			float: right;
+		}
+
 
 /*==========================
 About
@@ -1080,14 +1118,21 @@ Media queries
 ========================================= */
 @media (min-width: 959px) and (max-width: 1199px) {
 	.navbar-nav {
-		margin-top: 20px;
+		margin-top: 0px;
+	}
+	.navbar.navbar-fixed-top {
+		background-color:#242424;
 	}
 }
 
 @media only screen and (min-device-width : 979px) and (max-device-width : 1024px)  {
 
 	.navbar-nav {
-		margin-top: 20px;
+		margin-top: 0px;
+	}
+	
+.navbar.navbar-fixed-top {
+		background-color:#242424;
 	}
 }
 
@@ -1095,13 +1140,16 @@ Media queries
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
 	.navbar-nav {
-		margin-top: 20px;
+		margin-top: 0px;
+	}
+.navbar.navbar-fixed-top {
+		background-color:#242424;
 	}
 }
 @media (max-width: 767px) {
 
 	.navbar.navbar-fixed-top {
-		background-color:transparent;
+		background-color:#242424;
 	}
 	.navbar .navbar-collapse ul.nav {
 		background-color: #444;
@@ -1117,6 +1165,7 @@ Media queries
 		padding-top: 80px;
 		height:600px;
 	}
+
 	
 	.team-member,.col-lg-4 {
 		margin-bottom: 30px;
@@ -1125,6 +1174,11 @@ Media queries
 	.stats .col-md-3 {
 		margin-bottom: 30px;
 	}
+
+	.bg-color {
+		min-height: 720px;
+	}
+
 }
 
 
