@@ -359,6 +359,7 @@ section.section {
 	margin-bottom: 0;
 	padding-bottom:0;
 }
+/* contact us button */
 .btn-contact a{
 	border-radius: 25px;
 	color: #fff !important;
@@ -369,6 +370,14 @@ section.section {
 	background-color: #fff;
 	color:#5FCF80 !important;
 }
+.btn {
+	border-radius: 25%;
+}
+/* form modal */
+.required {
+  color:red; 
+  font-weight:bold
+} 
 
 .nav li {
 	height: 100%;
